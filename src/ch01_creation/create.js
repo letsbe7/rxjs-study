@@ -9,9 +9,6 @@ export default function () {
     const subscribe = hello.subscribe(val => console.log(val));
 
 
-
-
-
     const evenNumbers = Rx.Observable.create(observer => {
         let value = 0;
         const interval = setInterval(() => {
