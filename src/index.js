@@ -8,6 +8,11 @@ import interval from './ch01_creation/interval';
 import of$ from './ch01_creation/of';
 import range from './ch01_creation/range';
 import throw$ from './ch01_creation/throw';
+import timer from './ch01_creation/timer';
+
+import combineAll from './ch02_combination/combineAll';
+import combineLatest from './ch02_combination/combineLatest';
+
 
 //mod1();
 //create();
@@ -18,4 +23,8 @@ import throw$ from './ch01_creation/throw';
 //interval();
 //of$(1, 2, 3, 4, 5);
 //range();
-throw$();
+//throw$();
+//timer();
+
+//combineAll();
+combineLatest();

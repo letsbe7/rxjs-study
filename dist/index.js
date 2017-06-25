@@ -40,6 +40,18 @@ var _throw = require('./ch01_creation/throw');
 
 var _throw2 = _interopRequireDefault(_throw);
 
+var _timer = require('./ch01_creation/timer');
+
+var _timer2 = _interopRequireDefault(_timer);
+
+var _combineAll = require('./ch02_combination/combineAll');
+
+var _combineAll2 = _interopRequireDefault(_combineAll);
+
+var _combineLatest = require('./ch02_combination/combineLatest');
+
+var _combineLatest2 = _interopRequireDefault(_combineLatest);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //mod1();
@@ -51,4 +63,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //interval();
 //of$(1, 2, 3, 4, 5);
 //range();
-(0, _throw2.default)();
+//throw$();
+//timer();
+
+//combineAll();
+(0, _combineLatest2.default)();
