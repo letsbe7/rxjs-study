@@ -1,4 +1,3 @@
-import mod1 from './my_async';
 import create from './ch01_creation/create';
 import empty from './ch01_creation/empty';
 import from$ from './ch01_creation/from';
@@ -12,6 +11,9 @@ import timer from './ch01_creation/timer';
 
 import combineAll from './ch02_combination/combineAll';
 import combineLatest from './ch02_combination/combineLatest';
+import concat from './ch02_combination/concat';
+import concatAll from './ch02_combination/concatAll';
+import forkJoin from './ch02_combination/forkJoin';
 
 
 //mod1();
@@ -27,4 +29,7 @@ import combineLatest from './ch02_combination/combineLatest';
 //timer();
 
 //combineAll();
-combineLatest();
+//combineLatest();
+//concat();
+//concatAll();
+forkJoin();

@@ -1,9 +1,5 @@
 'use strict';
 
-var _my_async = require('./my_async');
-
-var _my_async2 = _interopRequireDefault(_my_async);
-
 var _create = require('./ch01_creation/create');
 
 var _create2 = _interopRequireDefault(_create);
@@ -52,6 +48,18 @@ var _combineLatest = require('./ch02_combination/combineLatest');
 
 var _combineLatest2 = _interopRequireDefault(_combineLatest);
 
+var _concat = require('./ch02_combination/concat');
+
+var _concat2 = _interopRequireDefault(_concat);
+
+var _concatAll = require('./ch02_combination/concatAll');
+
+var _concatAll2 = _interopRequireDefault(_concatAll);
+
+var _forkJoin = require('./ch02_combination/forkJoin');
+
+var _forkJoin2 = _interopRequireDefault(_forkJoin);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //mod1();
@@ -67,4 +75,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //timer();
 
 //combineAll();
-(0, _combineLatest2.default)();
+//combineLatest();
+//concat();
+//concatAll();
+(0, _forkJoin2.default)();
