@@ -60,6 +60,14 @@ var _forkJoin = require('./ch02_combination/forkJoin');
 
 var _forkJoin2 = _interopRequireDefault(_forkJoin);
 
+var _merge = require('./ch02_combination/merge');
+
+var _merge2 = _interopRequireDefault(_merge);
+
+var _mergeAll = require('./ch02_combination/mergeAll');
+
+var _mergeAll2 = _interopRequireDefault(_mergeAll);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //mod1();
@@ -78,4 +86,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //combineLatest();
 //concat();
 //concatAll();
-(0, _forkJoin2.default)();
+//forkJoin();
+//merge();
+(0, _mergeAll2.default)();

@@ -14,6 +14,8 @@ import combineLatest from './ch02_combination/combineLatest';
 import concat from './ch02_combination/concat';
 import concatAll from './ch02_combination/concatAll';
 import forkJoin from './ch02_combination/forkJoin';
+import merge from './ch02_combination/merge';
+import mergeAll from './ch02_combination/mergeAll';
 
 
 //mod1();
@@ -32,4 +34,6 @@ import forkJoin from './ch02_combination/forkJoin';
 //combineLatest();
 //concat();
 //concatAll();
-forkJoin();
+//forkJoin();
+//merge();
+mergeAll();
