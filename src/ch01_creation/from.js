@@ -11,6 +11,7 @@ export default function () {
     //  observable from promise
 
     const promiseSource = Rx.Observable.from(new Promise(resolve => {
+        
         console.log('inner promise\' resolve');
         setTimeout(function () {
             resolve('1.5s after Promised Hello world');
