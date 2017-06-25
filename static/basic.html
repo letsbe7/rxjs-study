@@ -1,0 +1,56 @@
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <input type="text" id="input">
+    <div id="result">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="./../node_modules/rx-lite/rx.lite.js"></script>
+    <script>
+        var $input = $('#input');
+        var $result = $('#result');
+
+
+        /**
+        *   인풋스트림
+        */
+        var keyups = Rx.Observable.fromEvent($input, 'keyup')
+            .pluck('target', 'value')
+            .filter(function (text) {
+                return text.length > 2;
+            });
+        
+        var searchStream = keyups.debounce(500).distinctUntilChanged();
+
+        
+
+        var searchWikipedia = function (term) {
+            console.log('');
+            return $.ajax({
+                url: 'https://en.wikipedia.org/w/api.php',
+                dataType: 'jsonp',
+                data: {
+                    action: 'opensearch',
+                    format: 'json',
+                    search: term
+                }
+            }).promise();
+        };
+
+        var suggestions = searchStream.flatMapLatest(searchWikipedia);
+
+        suggestions.subscribe(function (data) {
+            $result.empty().append($.map(data[1], function (value) {
+                return $('<li>').text(value);
+            }));
+        }, function (err) {
+            $result.empty().append($('<li>')).text('ERROR: ' + err);
+        });
+
+    </script>
+</body>
+</html>
