@@ -16,7 +16,13 @@ import concatAll from './ch02_combination/concatAll';
 import forkJoin from './ch02_combination/forkJoin';
 import merge from './ch02_combination/merge';
 import mergeAll from './ch02_combination/mergeAll';
+import pairwise from './ch02_combination/pairwise';
+import race from './ch02_combination/race';
+import startWith from './ch02_combination/startWith';
+import withLatestFrom from './ch02_combination/withLatestFrom';
 
+
+import test01 from './exercise/01_exercise';
 
 //mod1();
 //create();
@@ -36,4 +42,10 @@ import mergeAll from './ch02_combination/mergeAll';
 //concatAll();
 //forkJoin();
 //merge();
-mergeAll();
+//mergeAll();
+//pairwise();
+//race();
+//startWith();
+withLatestFrom();
+
+//test01();

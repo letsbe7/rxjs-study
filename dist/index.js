@@ -68,6 +68,26 @@ var _mergeAll = require('./ch02_combination/mergeAll');
 
 var _mergeAll2 = _interopRequireDefault(_mergeAll);
 
+var _pairwise = require('./ch02_combination/pairwise');
+
+var _pairwise2 = _interopRequireDefault(_pairwise);
+
+var _race = require('./ch02_combination/race');
+
+var _race2 = _interopRequireDefault(_race);
+
+var _startWith = require('./ch02_combination/startWith');
+
+var _startWith2 = _interopRequireDefault(_startWith);
+
+var _withLatestFrom = require('./ch02_combination/withLatestFrom');
+
+var _withLatestFrom2 = _interopRequireDefault(_withLatestFrom);
+
+var _exercise = require('./exercise/01_exercise');
+
+var _exercise2 = _interopRequireDefault(_exercise);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 //mod1();
@@ -88,4 +108,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //concatAll();
 //forkJoin();
 //merge();
-(0, _mergeAll2.default)();
+//mergeAll();
+//pairwise();
+//race();
+//startWith();
+(0, _withLatestFrom2.default)();
+
+//test01();
