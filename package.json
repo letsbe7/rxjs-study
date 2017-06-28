@@ -1,17 +1,17 @@
 {
   "name": "rxjs-sample",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
     "watch": "babel -w src/ -d dist/",
-    "build": "babel src/ -d dist/",
+    "build": "webpack",
     "serve": "babel -w src/ -d dist/ | nodemon --watch dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.3",
+    "lodash": "^4.17.4",
     "redux": "^3.7.0",
     "redux-observable": "^0.14.1",
     "rx-lite": "^4.0.8",
@@ -20,6 +20,17 @@
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-polyfill": "^6.23.0",
-    "babel-preset-env": "^1.5.2"
-  }
+    "babel-preset-env": "^1.5.2",
+    "webpack": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/letsbe7/rxjs-study.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/letsbe7/rxjs-study/issues"
+  },
+  "homepage": "https://github.com/letsbe7/rxjs-study#readme",
+  "description": ""
 }

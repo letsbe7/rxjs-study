@@ -84,6 +84,10 @@ var _withLatestFrom = require('./ch02_combination/withLatestFrom');
 
 var _withLatestFrom2 = _interopRequireDefault(_withLatestFrom);
 
+var _zip = require('./ch02_combination/zip');
+
+var _zip2 = _interopRequireDefault(_zip);
+
 var _exercise = require('./exercise/01_exercise');
 
 var _exercise2 = _interopRequireDefault(_exercise);
@@ -112,6 +116,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 //pairwise();
 //race();
 //startWith();
-(0, _withLatestFrom2.default)();
+//withLatestFrom();
+(0, _zip2.default)();
 
 //test01();

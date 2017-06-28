@@ -20,6 +20,7 @@ import pairwise from './ch02_combination/pairwise';
 import race from './ch02_combination/race';
 import startWith from './ch02_combination/startWith';
 import withLatestFrom from './ch02_combination/withLatestFrom';
+import zip from './ch02_combination/zip';
 
 
 import test01 from './exercise/01_exercise';
@@ -46,6 +47,7 @@ import test01 from './exercise/01_exercise';
 //pairwise();
 //race();
 //startWith();
-withLatestFrom();
+//withLatestFrom();
+zip();
 
 //test01();
