@@ -22,6 +22,11 @@ import startWith from './ch02_combination/startWith';
 import withLatestFrom from './ch02_combination/withLatestFrom';
 import zip from './ch02_combination/zip';
 
+import debounce from './ch03_filtering/debounce';
+import debounceTime from './ch03_filtering/debounceTime';
+import distinctUntilChanged from './ch03_filtering/distinctUntilChanged';
+import filter from './ch03_filtering/filter'
+import first from './ch03_filtering/first'
 
 import test01 from './exercise/01_exercise';
 
@@ -48,6 +53,12 @@ import test01 from './exercise/01_exercise';
 //race();
 //startWith();
 //withLatestFrom();
-zip();
+//zip();
+
+//debounce();
+//debounceTime();
+//distinctUntilChanged();
+//filter();
+first();
 
 //test01();
