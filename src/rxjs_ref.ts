@@ -27,8 +27,11 @@ import debounceTime from './ch03_filtering/debounceTime';
 import distinctUntilChanged from './ch03_filtering/distinctUntilChanged';
 import filter from './ch03_filtering/filter'
 import first from './ch03_filtering/first'
+import ignoreElements from './ch03_filtering/ignoreElements'
+import last from './ch03_filtering/last'
+import sample from './ch03_filtering/sample'
+import takeUntil from './ch03_filtering/takeUntil'
 
-import test01 from './exercise/01_exercise';
 
 //mod1();
 //create();
@@ -59,6 +62,11 @@ import test01 from './exercise/01_exercise';
 //debounceTime();
 //distinctUntilChanged();
 //filter();
-first();
+//first();
+//ignoreElements()
+//last()
+//sample()
+takeUntil()
+
 
 //test01();
