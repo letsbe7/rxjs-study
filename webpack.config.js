@@ -15,11 +15,13 @@ module.exports = {
 
     module: {
         rules: [
-            { test: /\.tsx?$/, loader: "awesome-typescript-loader", exclude: /node_modules/ },
+            { test: /\.tsx?$/, loader: "awesome-typescript-loader" },
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ],
 
     },
+    /* product에는 주석풀 것
+    */
     externals: {
         "react": "React",
         "react-dom": "ReactDOM"
