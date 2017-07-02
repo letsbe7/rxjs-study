@@ -77,7 +77,7 @@ export default class App extends React.Component<undefined, AppState> {
             .subscribe(this.handleSubscribe.bind(this));
     }
 
-    handleKeyup (evt:HTMLInputEvent): void {
+    handleKeyup (evt: HTMLInputEvent): void {
         const value: string = evt.target.value;
         this.textEventEmitter.next(value);
     }

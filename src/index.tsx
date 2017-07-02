@@ -1,10 +1,9 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import 'whatwg-fetch';
 
-//import { Hello } from './components/Hello';
-import App from './components/autocomplete/Autocomplete';
-
+//  import App from './components/autocomplete/Autocomplete';
+//  import App from './components/simpleDatabinding/simpleDatabinding';
+import App from './components/timeflies/Timefiles';
 
 ReactDOM.render(
     //  <Hello compiler="TypeScript" framework="React" />, 
