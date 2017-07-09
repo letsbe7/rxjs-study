@@ -1,6 +1,28 @@
 
 (function ($) {
 
+    $.fn.extend({
+        animateCss: function (animationName, cb) {
+            var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            this.addClass('animated ' + animationName).one(animationEnd, function() {
+                $(this).removeClass('animated ' + animationName);
+                if (cb && typeof cb == 'function') {
+                    cb.call(cb);
+                }
+            });
+        }
+    });
+
+    $('#btn').click(function () {
+        var value = $('#autocomplete').val();
+
+        if (value.length > 2) {
+            $(this).animateCss('shake', function () {
+                alert('글자 수가 넘었습니다.');
+            });
+        }
+
+    });
 
     var localVariable = [];
 
@@ -37,6 +59,9 @@
     observable.subscribe(
         function (val) { 
             localVariable.push(val);
+            $('#autocomplete').autocomplete().setOptions({
+                lookup: localVariable
+            });
             console.log(val); 
         }, 
         
